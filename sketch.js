@@ -2,7 +2,6 @@ let rez = 20;
 let w;
 let h;
 let snake;
-let food;
 
 function setup() {
   createCanvas(400, 400);
@@ -10,7 +9,6 @@ function setup() {
   w = floor(width/rez);
 	h = floor(height/rez);
   snake = new Snake();
-  createFood();
 }
 
 function keyPressed(){
@@ -32,30 +30,13 @@ function keyPressed(){
   }
 }
 
-function createFood(){
-	let x = floor(random(w));
-  let y = floor(random(h));
-  food = createVector(x,y);
-}
+
 
 function draw() {
   scale(rez);
   background(220);
   noStroke();
   
-  if (snake.eat(food) == true){
-  	createFood();
-  }
-  
-  fill('red');
-  rect(food.x, food.y, 1, 1);
-  
   snake.update();
   snake.show();
-  
-  if (snake.endGame()) {
-    background(255, 0, 0);
-    noLoop();
-  }
-  
 }
