@@ -1,12 +1,12 @@
 class Snake {
-  
+
   constructor() {
   	this.body = [];
     this.body[0] = createVector(floor(w/2), floor(h/2));
     this.xdir = 0;
     this.ydir = 0;
   }
-  
+
   update() {
   	let head = this.body[0].copy();
     this.body.pop();
@@ -14,10 +14,10 @@ class Snake {
     head.y += this.ydir;
     this.body.unshift(head);
   }
-  
+
   grow() {
-  	let head = this.body[0].copy();
-    this.body.unshift(head);
+    let tail = this.body[this.body.length-1].copy();
+    this.body.push(tail);
   }
   
   endGame() {
@@ -33,7 +33,7 @@ class Snake {
     }
     return false;
   }
-  
+
   eat(pos) {
     let head = this.body[0]
     if(head.x == pos.x && head.y == pos.y) {
@@ -42,7 +42,7 @@ class Snake {
     }
     return false;
   }
-  
+
   show() {
   	for(let i = 0; i < this.body.length; i++) {
     	fill(0);
