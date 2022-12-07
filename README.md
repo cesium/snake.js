@@ -4,7 +4,8 @@
 
 # Snake in JavaScript
 
-[![p5.js Badge](https://img.shields.io/badge/p5.js-ED225D?logo=p5dotjs&logoColor=fff&style=flat-square)](https://editor.p5js.org/mikl/sketches/Bk7lEYf1N)
+[![p5.js Badge](https://img.shields.io/badge/start-ED225D?logo=p5dotjs&logoColor=fff&style=flat-square)](https://editor.p5js.org/mikl/sketches/Bk7lEYf1N)
+[![p5.js Badge](https://img.shields.io/badge/end-ED225D?logo=p5dotjs&logoColor=fff&style=flat-square)](https://editor.p5js.org/mikl/sketches/ryXGvEE1V)
 
 <div align="justify">
 
