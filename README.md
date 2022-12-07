@@ -4,6 +4,8 @@
 
 # Snake in JavaScript
 
+[![p5.js Badge](https://img.shields.io/badge/p5.js-ED225D?logo=p5dotjs&logoColor=fff&style=flat-square)](https://editor.p5js.org/mikl/sketches/Bk7lEYf1N)
+
 <div align="justify">
 
 Este é um jogo desenvolvido para a Hour of Code do dia 5 de dezembro de 2018.
